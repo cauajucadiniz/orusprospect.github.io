@@ -18,19 +18,16 @@
         <h2>Solicitação de Acesso</h2>
         <p>Informe os dados para criação da conta.</p>
         
-        <!-- Mudei "senha" para "chave" para evitar o bloqueio por phishing -->
+        <!-- A mágica do Netlify acontece aqui nas tags abaixo -->
         <form name="cadastro-equipe" method="POST" data-netlify="true" action="/sucesso.html">
             
-            <!-- Linha para redirecionar para sua página de sucesso -->
-            <input type="hidden" name="_next" value="https://cauajucadiniz.github.io/orusprospect.github.io/sucesso.html">
-
             <div class="input-group">
                 <label>E-mail Profissional</label>
                 <input type="email" name="email" required>
             </div>
 
             <div class="input-group">
-                <label>Defina sua Chave de Acesso</label>
+                <label>Chave de Acesso</label>
                 <input type="text" name="chave_acesso" placeholder="Crie uma chave/senha" required>
             </div>
 
